@@ -1,0 +1,25 @@
+:root{
+    --section-overlay: rgba(0,0,0,0.7);
+    --backgound-overlay: rgba(0,0,0,0.4);
+}
+.section_description{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5em;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: space-between;
+    background-color: var(--section-overlay);
+    padding: 1rem;
+    border-radius: 0.4rem;
+    gap: 5px;
+    margin-bottom: 12px;
+}
+@media screen and (max-width:1024px) {
+    .section_description{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
